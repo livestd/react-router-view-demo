@@ -2,7 +2,8 @@ import React from 'react';
 import {RouteComponentProps} from "react-router";
 
 const InfoIdComponent = (props: RouteComponentProps) => {
-    console.log('props', props)
+    console.log('props infoid', props)
+
     const params: Record<string, string> = props.match.params
     return (
         <div>
