@@ -18,6 +18,6 @@ export class ThemeStore extends Store<ContentState> {
         e && e.stopPropagation();
 
         this.setState({ selectedItem: props });
-        this.rootStore.routerStore.push('path', props)
+        // this.rootStore.routerStore.push('path', props)
     }
 }

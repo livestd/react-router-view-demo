@@ -1,13 +1,13 @@
 import React from 'react';
-import {RouteComponentProps} from "react-router";
+import { RouterView, WithRoute } from '../route';
 
-const InfoIdComponent = (props: RouteComponentProps) => {
-    console.log('props infoid', props)
+const InfoIdComponent = (props: WithRoute<any>) => {
+    const params: Record<string, string> = props.route.match.params
 
-    const params: Record<string, string> = props.match.params
     return (
-        <div>
-            is infoId - {params.n} component
+        <div style={{border: "1px solid green", padding: "10px"}}>
+            is infoId - {params.id} component
+            <RouterView route={props.route} store={props.store}/>
         </div>
     )
 }

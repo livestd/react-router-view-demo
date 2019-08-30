@@ -1,11 +1,11 @@
 import React from 'react';
 
-const InfoListComponent = () => {
+const InfoDetailsComponent = () => {
     return (
         <div style={{border: "1px solid red", padding: "10px"}}>
-            is infoList component
+            is info details component
         </div>
     )
 }
 
-export default InfoListComponent
+export default InfoDetailsComponent
