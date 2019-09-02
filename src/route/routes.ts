@@ -56,7 +56,7 @@ export const routes: RouteParams[] = [
                         path: '/details',
                         component: InfoDetailsComponent
                     }
-                ]
+                ],
             },
             {
                 name: 'infoList',
